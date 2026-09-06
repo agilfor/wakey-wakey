@@ -10,7 +10,7 @@
 		(company "agilfor")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -21,7 +21,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -30,7 +30,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
+			(property "Value" "Conn_01x03_Pin"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -62,7 +62,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -105,7 +105,18 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(rectangle
 					(start 0.8636 0.127)
 					(end 0 -0.127)
@@ -126,6 +137,18 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -153,7 +176,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -171,7 +194,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -181,6 +204,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2116,6 +2157,12 @@
 		)
 	)
 	(junction
+		(at 205.74 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50a0e342-2ce2-46a9-8338-69d9aa734446")
+	)
+	(junction
 		(at 185.42 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2401,6 +2448,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 138.43) (xy 205.74 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92ccb100-800b-478f-9183-5859fc12e710")
+	)
+	(wire
+		(pts
 			(xy 55.88 83.82) (xy 62.23 83.82)
 		)
 		(stroke
@@ -2448,6 +2505,16 @@
 			(type default)
 		)
 		(uuid "be74a814-6b3a-4e35-84ae-6498aa7e1836")
+	)
+	(wire
+		(pts
+			(xy 205.74 143.51) (xy 205.74 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be871131-1fef-45ed-8d3e-0ec9cc89ef07")
 	)
 	(wire
 		(pts
@@ -2528,16 +2595,6 @@
 			(type default)
 		)
 		(uuid "ece08f87-4f18-4065-b1ed-d6bae4c7ef8f")
-	)
-	(wire
-		(pts
-			(xy 205.74 146.05) (xy 205.74 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efdacdd2-c407-4ce2-a1db-5b73956c3436")
 	)
 	(wire
 		(pts
@@ -3000,7 +3057,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
+		(lib_id "Connector:Conn_01x03_Pin")
 		(at 210.82 140.97 180)
 		(unit 1)
 		(body_style 1)
@@ -3012,7 +3069,7 @@
 		(fields_autoplaced yes)
 		(uuid "35cb9ebe-bb51-4d15-99f7-832199ce5be3")
 		(property "Reference" "J2"
-			(at 212.09 138.4299 0)
+			(at 212.09 139.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3023,7 +3080,7 @@
 			)
 		)
 		(property "Value" "BAT_PWR"
-			(at 212.09 140.9699 0)
+			(at 212.09 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3033,7 +3090,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 210.82 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3055,7 +3112,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" "Generic connector, single row, 01x03, script generated"
 			(at 210.82 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3071,6 +3128,9 @@
 		)
 		(pin "2"
 			(uuid "a52cc2e8-6ccd-4c50-bb44-ef161b9b2fb4")
+		)
+		(pin "3"
+			(uuid "5192813c-3c43-4f5b-bc7d-ba45cee7c787")
 		)
 		(instances
 			(project "wakey-wakey"
@@ -3352,7 +3412,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 212.09 83.82 0)
 			(hide yes)
 			(show_name no)

@@ -524,9 +524,9 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/Users/alangilforza/Projects/HackClub/wakey-wakey/production/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "wakey-wakey.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
