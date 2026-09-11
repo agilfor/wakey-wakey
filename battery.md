@@ -4,6 +4,6 @@ The idea of the battery wiring stems from a section of the [Seeed Studio XIAO ES
 
 The solution presented by msfujino has been implemented in the design of wakey-wakey, but it requires soldering. Normally, it would be possible to wire directly from battery -> ESP32C3, but with the resistors for the voltage dividers it becomes more complicated and we end up with battery -> PCB -> ESP32C3. This is shown in the diagram below.
 
-[!The diagram of the battery wiring](./assets/battery_plan.png)
+![The diagram of the battery wiring](./assets/battery_plan.png)
 
 The dotted lines indicated wiring/soldering that cannot be incorporated into the PCB. Though it would technically be possible to solder the resistors directly onto the ESP32C3 microcontroller, I find it to be a much cleaner solution to put it on the PCB as shown above. Electrically, the two circuits are equivalent so it does not make a difference for the functionality of the design.
