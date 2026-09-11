@@ -36,6 +36,10 @@ This is my PCB. The routing wasn't particularly difficult, but I had fun with it
 ![PCB CAD Model (Front)](./assets/pcb_front.png)
 ![PCB CAD Model (Back)](./assets/pcb_back.png)
 
+### Wiring/Soldering
+
+Due to the mount style of the XIAO ESP32C3, it is not possible to easily connect the battery pads under the microcontroller to the PCB (technically this is possible using a SMD mount, but it is a pain and much simpler to do some soldering with a DIP mount). The 4 pin male header is the connection of the battery to the microcontroller. It has 4 pins as it requires two pins for VCC and two for GND (connection to the battery cell and connection to the microcontroller). 
+
 ## Firmware Overview
 
 The wakey-wakey uses C++ firmware for everything. Currently it supports deep sleep and waking on button press. It should also be able to draw to the TFT display.
@@ -62,3 +66,5 @@ Extra:
 
 - 2x 220kΩ resistors
 - 1x 4 pin male header
+- LIR2450 battery cell 
+- LIR2450 battery holder
